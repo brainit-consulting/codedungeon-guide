@@ -22,6 +22,21 @@
     <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
+<div class="book">
+<nav class="toc" id="contents" aria-label="Contents">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<details class="toc-fold" open>
+<summary>Contents</summary>
+<p class="toc-title"><a href="/">Code Dungeon<span>The User Guide</span></a></p>
+<ol class="chapters"><li><a href="/dungeon"><span class="num">I</span><span class="name">The dungeon and how it is laid out</span></a></li><li><a href="/moving"><span class="num">II</span><span class="name">Moving about</span></a></li><li><a href="/guild"><span class="num">III</span><span class="name">Your guild</span></a></li><li><a href="/quests"><span class="num">IV</span><span class="name">Quests: issues, pull requests and QA</span></a></li><li><a href="/watching"><span class="num">V</span><span class="name">Watching the work</span></a></li><li class="here"><a aria-current="page" href="/ledger"><span class="num">VI</span><span class="name">The Overlord's ledger</span></a><ol class="sections"><li><a class="section" href="#chambers-repos">Chambers &amp; repos</a></li><li><a class="section" href="#dungeonmaster-recruits">DungeonMaster &amp; recruits</a></li><li><a class="section" href="#guild">Guild</a></li><li><a class="section" href="#issues">Issues</a></li><li><a class="section" href="#settings">Settings</a></li></ol></li><li><a href="/pastimes"><span class="num">VII</span><span class="name">Pastimes: darts and the black cat</span></a></li><li><a href="/shipping"><span class="num">VIII</span><span class="name">Shipping your app</span></a></li><li><a href="/trouble"><span class="num">IX</span><span class="name">When something goes wrong</span></a></li><li><a href="/keys"><span class="num">X</span><span class="name">Keys at a glance</span></a></li></ol>
+<div class="textsize" role="group" aria-label="Text size">
+<button type="button" data-size="-1" aria-label="Smaller text">A−</button>
+<button type="button" data-size="0" aria-label="Normal text size">A</button>
+<button type="button" data-size="1" aria-label="Larger text">A+</button>
+</div>
+</details>
+</nav>
 <main class="leaf">
 <div class="char" aria-hidden="true"></div>
 <div class="paper" aria-hidden="true"></div>
@@ -30,17 +45,17 @@
 <article>
 <header class="chapter-head"><p class="chapter-num">Chapter VI</p><h1>The Overlord's ledger</h1></header>
 <p class="opening">The ledger is where you change how the dungeon runs. It sits on your table in your study (back left of the great hall): press <kbd>E</kbd> at the table to open it. It has five tabs.</p>
-<h2>Chambers &amp; repos</h2>
+<h2 id="chambers-repos">Chambers &amp; repos</h2>
 <p>One row per chamber. <strong>Visit</strong> walks you there. Switches for <strong>Auto-assign issues</strong>, <strong>Auto-merge</strong> and <strong>Browser testing</strong> (testers use a real browser through Playwright). You can pick the chamber's colour, link it to other chambers so its coders can read those repos, and <strong>Disconnect</strong> it: everyone in it is let go, nothing is deleted on GitHub, and the folder stays on disk.</p>
 <p>Each row also shows whether your project folder is up to date with GitHub. After a merge it fast-forwards when that is safe; if it can't (local changes, another branch checked out), it says why, and <strong>Sync now</strong> tries again. Nothing is ever stashed or thrown away.</p>
 <p><strong>Add a project</strong> at the bottom connects a project folder or a GitHub repo, or starts a new one. Every project must be on GitHub, because issues and pull requests are how the guild works.</p>
-<h2>DungeonMaster &amp; recruits</h2>
+<h2 id="dungeonmaster-recruits">DungeonMaster &amp; recruits</h2>
 <p>The DungeonMaster's model and effort, the recruits waiting for you, and a <strong>project brief</strong> for each chamber: what it should build next. <strong>Re-study</strong> asks him to read the repo again and rethink the guild.</p>
-<h2>Guild</h2>
+<h2 id="guild">Guild</h2>
 <p>Everyone in every chamber: name, job title, specialty, coding agent, model, effort and look. <strong>Terminal</strong> opens their terminal; <strong>Let go</strong> lets them go.</p>
-<h2>Issues</h2>
+<h2 id="issues">Issues</h2>
 <p>File a new issue on any chamber's repo, and see the open ones.</p>
-<h2>Settings</h2>
+<h2 id="settings">Settings</h2>
 <ul><li><strong>Default coding agent, model and effort</strong> for everyone (each person can override them in the Guild tab).</li><li><strong>Session limit</strong>: how many agents may work at once. Empty means no limit.</li><li><strong>Sessions while pacing</strong>: how many may run when Claude warns that usage is high (chapter 9).</li><li><strong>Recruiting</strong>: approve every recruit, or auto-approve up to the <strong>guild cap per chamber</strong>.</li><li><strong>Dungeon review every</strong> so many minutes: how often the DungeonMaster looks over everything (0 turns it off).</li><li><strong>How coders run</strong>: real terminals (recommended) or the Agent SDK.</li><li>Your name, the company name, the folder new projects are created in, and <strong>Replay the tour</strong>.</li></ul>
 <p>When an update to the dungeon itself is ready, a row at the top of the ledger offers <strong>Update now</strong> or <strong>Later</strong>. Updating lets running sessions finish first, then restarts the dungeon.</p>
 </article>
@@ -51,5 +66,7 @@
 </nav>
 </div>
 </main>
+</div>
+<script src="/guide.js" defer></script>
 </body>
 </html>

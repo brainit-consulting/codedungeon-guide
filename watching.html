@@ -22,6 +22,21 @@
     <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
+<div class="book">
+<nav class="toc" id="contents" aria-label="Contents">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<details class="toc-fold" open>
+<summary>Contents</summary>
+<p class="toc-title"><a href="/">Code Dungeon<span>The User Guide</span></a></p>
+<ol class="chapters"><li><a href="/dungeon"><span class="num">I</span><span class="name">The dungeon and how it is laid out</span></a></li><li><a href="/moving"><span class="num">II</span><span class="name">Moving about</span></a></li><li><a href="/guild"><span class="num">III</span><span class="name">Your guild</span></a></li><li><a href="/quests"><span class="num">IV</span><span class="name">Quests: issues, pull requests and QA</span></a></li><li class="here"><a aria-current="page" href="/watching"><span class="num">V</span><span class="name">Watching the work</span></a><ol class="sections"><li><a class="section" href="#slates">Slates</a></li><li><a class="section" href="#who-s-working">Who's working</a></li><li><a class="section" href="#your-scroll">Your scroll</a></li><li><a class="section" href="#sound">Sound</a></li></ol></li><li><a href="/ledger"><span class="num">VI</span><span class="name">The Overlord's ledger</span></a></li><li><a href="/pastimes"><span class="num">VII</span><span class="name">Pastimes: darts and the black cat</span></a></li><li><a href="/shipping"><span class="num">VIII</span><span class="name">Shipping your app</span></a></li><li><a href="/trouble"><span class="num">IX</span><span class="name">When something goes wrong</span></a></li><li><a href="/keys"><span class="num">X</span><span class="name">Keys at a glance</span></a></li></ol>
+<div class="textsize" role="group" aria-label="Text size">
+<button type="button" data-size="-1" aria-label="Smaller text">A−</button>
+<button type="button" data-size="0" aria-label="Normal text size">A</button>
+<button type="button" data-size="1" aria-label="Larger text">A+</button>
+</div>
+</details>
+</nav>
 <main class="leaf">
 <div class="char" aria-hidden="true"></div>
 <div class="paper" aria-hidden="true"></div>
@@ -30,16 +45,16 @@
 <article>
 <header class="chapter-head"><p class="chapter-num">Chapter V</p><h1>Watching the work</h1></header>
 <p class="opening">Nothing in the dungeon happens out of sight. Every coder's screen is their real terminal, and you can read it, type into it or stop it at any time.</p>
-<h2>Slates</h2>
+<h2 id="slates">Slates</h2>
 <p>The slate on each workbench is that coder's live terminal. Walk up behind them to read it. Press <kbd>E</kbd> on the bench (or click it) for the full terminal, where you can:</p>
 <ul><li>click into the terminal and type, as if it were your own (while it has focus, <kbd>Esc</kbd> goes to the agent and interrupts its turn);</li><li>use the message box underneath: <kbd>Enter</kbd> sends, <kbd>Shift</kbd> + <kbd>Enter</kbd> starts a new line. While they work it is typed into their session; afterwards it resumes it as a follow-up;</li><li>press <strong>Stop</strong>, hand them an issue from the backlog, or <strong>Clear bench</strong> when they are done.</li></ul>
-<h2>Who's working</h2>
+<h2 id="who-s-working">Who's working</h2>
 <p>The list at the top right shows everyone working right now, with their latest thought, reply or tool call: everyone in this chamber, or everyone in the dungeon when you are in the great hall. Click a name to open their terminal. <kbd>Tab</kbd> shows or hides the list.</p>
-<h2>Your scroll</h2>
+<h2 id="your-scroll">Your scroll</h2>
 <p>Press <kbd>P</kbd> anywhere to take out your scroll. It has three parts:</p>
 <ul><li><strong>Chat</strong>: write to the DungeonMaster and read what he and the dungeon send you (merges, refused merges, usage warnings).</li><li><strong>Recruits</strong>: the people waiting for your yes.</li><li><strong>Company</strong>: every project at a glance.</li></ul>
 <p>The red badge on the scroll counts messages and decisions waiting for you.</p>
-<h2>Sound</h2>
+<h2 id="sound">Sound</h2>
 <p>A bell tolls when a pull request is ready to merge, fails QA or is merged, when someone hits an error and when a new recruit arrives. Quiet music plays under it all. <kbd>M</kbd> mutes or unmutes everything, anywhere; <kbd>N</kbd> turns just the music off or on. Both volumes are in the help (<kbd>H</kbd>).</p>
 </article>
 <nav class="turn" aria-label="Turn the page">
@@ -49,5 +64,7 @@
 </nav>
 </div>
 </main>
+</div>
+<script src="/guide.js" defer></script>
 </body>
 </html>

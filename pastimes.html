@@ -22,6 +22,21 @@
     <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
+<div class="book">
+<nav class="toc" id="contents" aria-label="Contents">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<details class="toc-fold" open>
+<summary>Contents</summary>
+<p class="toc-title"><a href="/">Code Dungeon<span>The User Guide</span></a></p>
+<ol class="chapters"><li><a href="/dungeon"><span class="num">I</span><span class="name">The dungeon and how it is laid out</span></a></li><li><a href="/moving"><span class="num">II</span><span class="name">Moving about</span></a></li><li><a href="/guild"><span class="num">III</span><span class="name">Your guild</span></a></li><li><a href="/quests"><span class="num">IV</span><span class="name">Quests: issues, pull requests and QA</span></a></li><li><a href="/watching"><span class="num">V</span><span class="name">Watching the work</span></a></li><li><a href="/ledger"><span class="num">VI</span><span class="name">The Overlord's ledger</span></a></li><li class="here"><a aria-current="page" href="/pastimes"><span class="num">VII</span><span class="name">Pastimes: darts and the black cat</span></a><ol class="sections"><li><a class="section" href="#darts">Darts</a></li><li><a class="section" href="#the-black-cat">The black cat</a></li></ol></li><li><a href="/shipping"><span class="num">VIII</span><span class="name">Shipping your app</span></a></li><li><a href="/trouble"><span class="num">IX</span><span class="name">When something goes wrong</span></a></li><li><a href="/keys"><span class="num">X</span><span class="name">Keys at a glance</span></a></li></ol>
+<div class="textsize" role="group" aria-label="Text size">
+<button type="button" data-size="-1" aria-label="Smaller text">A−</button>
+<button type="button" data-size="0" aria-label="Normal text size">A</button>
+<button type="button" data-size="1" aria-label="Larger text">A+</button>
+</div>
+</details>
+</nav>
 <main class="leaf">
 <div class="char" aria-hidden="true"></div>
 <div class="paper" aria-hidden="true"></div>
@@ -30,10 +45,10 @@
 <article>
 <header class="chapter-head"><p class="chapter-num">Chapter VII</p><h1>Pastimes: darts and the black cat</h1></header>
 <p class="opening">Not everything in the dungeon is work.</p>
-<h2>Darts</h2>
+<h2 id="darts">Darts</h2>
 <p>The dart board hangs on the great hall's south wall, at the west end. Aim at it and press <kbd>E</kbd> to take the three darts. Click or press <kbd>F</kbd> to throw one: a tap lobs it, holding throws harder. <kbd>G</kbd> puts the darts back on the ledge, and so does freeing the mouse with <kbd>Esc</kbd>.</p>
 <p>Darts stick only in the board. A round is three darts, scored like the real game: doubles, trebles, 25 and the bull. The chalk tally beside the board keeps the best round. Press <kbd>E</kbd> on the board again to collect your darts. The coders are not targets.</p>
-<h2>The black cat</h2>
+<h2 id="the-black-cat">The black cat</h2>
 <p>A black cat lives in the dungeon and thinks she runs it. She sleeps by the hearth, sits on the bar, keeps working coders company and takes the DungeonMaster's desk when he isn't looking.</p>
 <p>Press <kbd>C</kbd> to call her. She will ignore you for a moment, then follow you about. She never blocks your way or a click, and a shut door doesn't stop her: she shoulders it open a crack and slips through.</p>
 <p>Rats get in now and then, never more than three at a time. When she spots one she creeps up on it, pounces, and carries the kill to her pile beside the hearth. Twelve is all there are: once the pile is full, no more come until the dungeon is reloaded.</p>
@@ -45,5 +60,7 @@
 </nav>
 </div>
 </main>
+</div>
+<script src="/guide.js" defer></script>
 </body>
 </html>

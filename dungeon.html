@@ -22,6 +22,21 @@
     <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
+<div class="book">
+<nav class="toc" id="contents" aria-label="Contents">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<details class="toc-fold" open>
+<summary>Contents</summary>
+<p class="toc-title"><a href="/">Code Dungeon<span>The User Guide</span></a></p>
+<ol class="chapters"><li class="here"><a aria-current="page" href="/dungeon"><span class="num">I</span><span class="name">The dungeon and how it is laid out</span></a><ol class="sections"><li><a class="section" href="#the-great-hall">The great hall</a></li><li><a class="section" href="#the-gallery-and-the-chambers">The gallery and the chambers</a></li><li><a class="section" href="#inside-a-chamber">Inside a chamber</a></li></ol></li><li><a href="/moving"><span class="num">II</span><span class="name">Moving about</span></a></li><li><a href="/guild"><span class="num">III</span><span class="name">Your guild</span></a></li><li><a href="/quests"><span class="num">IV</span><span class="name">Quests: issues, pull requests and QA</span></a></li><li><a href="/watching"><span class="num">V</span><span class="name">Watching the work</span></a></li><li><a href="/ledger"><span class="num">VI</span><span class="name">The Overlord's ledger</span></a></li><li><a href="/pastimes"><span class="num">VII</span><span class="name">Pastimes: darts and the black cat</span></a></li><li><a href="/shipping"><span class="num">VIII</span><span class="name">Shipping your app</span></a></li><li><a href="/trouble"><span class="num">IX</span><span class="name">When something goes wrong</span></a></li><li><a href="/keys"><span class="num">X</span><span class="name">Keys at a glance</span></a></li></ol>
+<div class="textsize" role="group" aria-label="Text size">
+<button type="button" data-size="-1" aria-label="Smaller text">A−</button>
+<button type="button" data-size="0" aria-label="Normal text size">A</button>
+<button type="button" data-size="1" aria-label="Larger text">A+</button>
+</div>
+</details>
+</nav>
 <main class="leaf">
 <div class="char" aria-hidden="true"></div>
 <div class="paper" aria-hidden="true"></div>
@@ -30,14 +45,14 @@
 <article>
 <header class="chapter-head"><p class="chapter-num">Chapter I</p><h1>The dungeon and how it is laid out</h1></header>
 <p class="opening">Code Dungeon is a real software workshop drawn as a dungeon. Every coder you see is a real coding agent working on one of your GitHub repos, and everything they do (issues, branches, pull requests, test reports) is real. The dungeon is one level: a great hall, a gallery running south from it, and a chamber for each project.</p>
-<h2>The great hall</h2>
+<h2 id="the-great-hall">The great hall</h2>
 <p>You start in the great hall. Its corners and walls hold everything that is about the whole dungeon rather than one project:</p>
 <ul><li><strong>Your study</strong>, the room at the back left. Your table is there: press <kbd>E</kbd> at it to open the Overlord's ledger (chapter 6).</li><li><strong>The DungeonMaster's quarters</strong>, at the back right under the DUNGEONMASTER sign. Press <kbd>E</kbd> on his bench to see what he is working on.</li><li><strong>The bar</strong>, in the middle of the hall, with kegs and bottles behind it. The cat likes to sit on it.</li><li><strong>The hearth</strong> and two feasting tables, towards the south end.</li><li><strong>The recruits' chairs</strong> along the east wall. Anyone the DungeonMaster wants to recruit waits here for your decision.</li><li><strong>The dart board</strong>, on the south wall at the west end (chapter 7).</li></ul>
-<h2>The gallery and the chambers</h2>
+<h2 id="the-gallery-and-the-chambers">The gallery and the chambers</h2>
 <p>The archway in the middle of the south wall leads into the gallery. Every connected repo has its own chamber off the gallery, alternating west and east. A chamber keeps its number for as long as its repo is connected, so removing one project never moves the others.</p>
 <p>Each chamber has a pair of oak doors. They creak open as you come up the gallery towards them and swing shut once you are well past, so from inside one chamber you see the shut doors of the chamber opposite.</p>
 <p>The directory beside the archway lists every chamber: press <kbd>E</kbd> on it to walk straight into one instead of finding the door.</p>
-<h2>Inside a chamber</h2>
+<h2 id="inside-a-chamber">Inside a chamber</h2>
 <ul><li><strong>The notice board</strong> on the far wall, facing you as you come in: the chamber's issues and pull requests (chapter 4).</li><li><strong>The coders' workbenches</strong>, each with a slate on an easel showing that coder's live terminal (chapter 5).</li><li><strong>The assay room</strong>: the testers in aprons along the east wall, who check every pull request before it is merged.</li><li><strong>The gauges</strong> on the far wall, right of the SHIP IT sign: how hard this computer is working (processor, memory, disk) and how Claude usage stands. Press <kbd>E</kbd> on them for the full readout, refreshed every five seconds.</li><li><strong>The framed screen</strong> on the left wall: the project's own app. Press <kbd>E</kbd> on it to start the app on the default branch or on any open pull request, and use it right there.</li></ul>
 <p>The plate at the top left of the screen always tells you where you are: the chamber number and repo name, or G and the great hall, with how many people are in the guild, how many are working, and how many pull requests are in QA or ready to merge.</p>
 </article>
@@ -48,5 +63,7 @@
 </nav>
 </div>
 </main>
+</div>
+<script src="/guide.js" defer></script>
 </body>
 </html>

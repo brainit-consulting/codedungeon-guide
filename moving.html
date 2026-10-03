@@ -22,6 +22,21 @@
     <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
+<div class="book">
+<nav class="toc" id="contents" aria-label="Contents">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<details class="toc-fold" open>
+<summary>Contents</summary>
+<p class="toc-title"><a href="/">Code Dungeon<span>The User Guide</span></a></p>
+<ol class="chapters"><li><a href="/dungeon"><span class="num">I</span><span class="name">The dungeon and how it is laid out</span></a></li><li class="here"><a aria-current="page" href="/moving"><span class="num">II</span><span class="name">Moving about</span></a><ol class="sections"><li><a class="section" href="#when-the-mouse-cannot-be-grabbed">When the mouse cannot be grabbed</a></li><li><a class="section" href="#mouse-settings">Mouse settings</a></li></ol></li><li><a href="/guild"><span class="num">III</span><span class="name">Your guild</span></a></li><li><a href="/quests"><span class="num">IV</span><span class="name">Quests: issues, pull requests and QA</span></a></li><li><a href="/watching"><span class="num">V</span><span class="name">Watching the work</span></a></li><li><a href="/ledger"><span class="num">VI</span><span class="name">The Overlord's ledger</span></a></li><li><a href="/pastimes"><span class="num">VII</span><span class="name">Pastimes: darts and the black cat</span></a></li><li><a href="/shipping"><span class="num">VIII</span><span class="name">Shipping your app</span></a></li><li><a href="/trouble"><span class="num">IX</span><span class="name">When something goes wrong</span></a></li><li><a href="/keys"><span class="num">X</span><span class="name">Keys at a glance</span></a></li></ol>
+<div class="textsize" role="group" aria-label="Text size">
+<button type="button" data-size="-1" aria-label="Smaller text">A−</button>
+<button type="button" data-size="0" aria-label="Normal text size">A</button>
+<button type="button" data-size="1" aria-label="Larger text">A+</button>
+</div>
+</details>
+</nav>
 <main class="leaf">
 <div class="char" aria-hidden="true"></div>
 <div class="paper" aria-hidden="true"></div>
@@ -32,9 +47,9 @@
 <p class="opening">Click the view once to grab the mouse. From then on the mouse turns your head, and the small cross in the middle of the screen is what you are pointing at. That first click only grabs the mouse; it never presses anything.</p>
 <table class="keys"><tbody><tr><th scope="row">W A S D or the arrow keys</th><td>Walk</td></tr><tr><th scope="row">Shift</th><td>Hold to run</td></tr><tr><th scope="row">Mouse</th><td>Look around</td></tr><tr><th scope="row">E or left click</th><td>Use whatever the cross is on: a bench, the notice board, the directory, your table</td></tr><tr><th scope="row">Esc</th><td>Let go of the mouse, or close the panel that is open</td></tr></tbody></table>
 <p>When the cross is on something you can use, a hint under it says what <kbd>E</kbd> will do, for example &quot;Open the notice board&quot;. Opening any panel frees the mouse so you can click in it. Closing the panel grabs the mouse again; if you would rather it didn't, untick <strong>Grab the mouse when panels close</strong> in the help (<kbd>H</kbd>).</p>
-<h2>When the mouse cannot be grabbed</h2>
+<h2 id="when-the-mouse-cannot-be-grabbed">When the mouse cannot be grabbed</h2>
 <p>Some browsers and embedded browser panes refuse to capture the mouse. The dungeon notices within a moment and switches to drag to look: hold the left button and drag the way you want to look (drag left to turn left, up to look up), and a click without a drag uses whatever the cross is on. Everything else works the same.</p>
-<h2>Mouse settings</h2>
+<h2 id="mouse-settings">Mouse settings</h2>
 <p>The help (<kbd>H</kbd>) has a sensitivity slider and an Invert Y switch. Both are saved in this browser.</p>
 </article>
 <nav class="turn" aria-label="Turn the page">
@@ -44,5 +59,7 @@
 </nav>
 </div>
 </main>
+</div>
+<script src="/guide.js" defer></script>
 </body>
 </html>
