@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watching the work · The Code Dungeon User Guide</title>
+<meta name="description" content="Chapter V of the Code Dungeon User Guide: Watching the work.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@500;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <filter id="burn" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="4" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="char" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<main class="leaf">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<div class="ink">
+<p class="running"><a href="/">Code Dungeon · The User Guide</a></p>
+<article>
+<header class="chapter-head"><p class="chapter-num">Chapter V</p><h1>Watching the work</h1></header>
+<p class="opening">Nothing in the dungeon happens out of sight. Every coder's screen is their real terminal, and you can read it, type into it or stop it at any time.</p>
+<h2>Slates</h2>
+<p>The slate on each workbench is that coder's live terminal. Walk up behind them to read it. Press <kbd>E</kbd> on the bench (or click it) for the full terminal, where you can:</p>
+<ul><li>click into the terminal and type, as if it were your own (while it has focus, <kbd>Esc</kbd> goes to the agent and interrupts its turn);</li><li>use the message box underneath: <kbd>Enter</kbd> sends, <kbd>Shift</kbd> + <kbd>Enter</kbd> starts a new line. While they work it is typed into their session; afterwards it resumes it as a follow-up;</li><li>press <strong>Stop</strong>, hand them an issue from the backlog, or <strong>Clear bench</strong> when they are done.</li></ul>
+<h2>Who's working</h2>
+<p>The list at the top right shows everyone working right now, with their latest thought, reply or tool call: everyone in this chamber, or everyone in the dungeon when you are in the great hall. Click a name to open their terminal. <kbd>Tab</kbd> shows or hides the list.</p>
+<h2>Your scroll</h2>
+<p>Press <kbd>P</kbd> anywhere to take out your scroll. It has three parts:</p>
+<ul><li><strong>Chat</strong>: write to the DungeonMaster and read what he and the dungeon send you (merges, refused merges, usage warnings).</li><li><strong>Recruits</strong>: the people waiting for your yes.</li><li><strong>Company</strong>: every project at a glance.</li></ul>
+<p>The red badge on the scroll counts messages and decisions waiting for you.</p>
+<h2>Sound</h2>
+<p>A bell tolls when a pull request is ready to merge, fails QA or is merged, when someone hits an error and when a new recruit arrives. Quiet music plays under it all. <kbd>M</kbd> mutes or unmutes everything, anywhere; <kbd>N</kbd> turns just the music off or on. Both volumes are in the help (<kbd>H</kbd>).</p>
+</article>
+<nav class="turn" aria-label="Turn the page">
+<a rel="prev" href="/quests">← Chapter IV<span class="name">Quests: issues, pull requests and QA</span></a>
+<a class="to-contents" href="/#contents">Contents</a>
+<a rel="next" href="/ledger">→ Chapter VI<span class="name">The Overlord's ledger</span></a>
+</nav>
+</div>
+</main>
+</body>
+</html>

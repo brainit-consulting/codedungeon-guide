@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your guild · The Code Dungeon User Guide</title>
+<meta name="description" content="Chapter III of the Code Dungeon User Guide: Your guild.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@500;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <filter id="burn" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="4" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="char" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<main class="leaf">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<div class="ink">
+<p class="running"><a href="/">Code Dungeon · The User Guide</a></p>
+<article>
+<header class="chapter-head"><p class="chapter-num">Chapter III</p><h1>Your guild</h1></header>
+<p class="opening">Your guild is the people who do the work. Each of them is a real coding agent (Claude Code by default; Codex or OpenCode if you have them) running in its own terminal on this machine, each in its own git worktree, so nobody steps on anyone else's changes.</p>
+<h2>Coders</h2>
+<p>Coders pick up GitHub issues, write the change, run the project's checks, push a branch and open a pull request. Each has a trade and may have a specialty: an issue labelled <code>swarm:&lt;specialty&gt;</code> goes to a free specialist first, but anyone can take it.</p>
+<h2>Testers</h2>
+<p>Testers wear aprons and work in the assay room. They test pull requests and never change them. Every chamber always has at least one tester, and can have up to three. When every tester is busy, a free coder who didn't write the pull request covers for them.</p>
+<h2>The DungeonMaster</h2>
+<p>The DungeonMaster runs the dungeon for you. He studies each new chamber, writes its QA brief, turns your project briefs into GitHub issues, gives coders work that fits the project and puts forward recruits. He also reviews the whole dungeon every so often (Settings in the ledger sets how often). Write to him on your scroll (<kbd>P</kbd>).</p>
+<h2>Recruiting</h2>
+<p>There are three ways to add someone to a chamber:</p>
+<ul><li>Accept a recruit the DungeonMaster puts forward. They wait on the chairs along the great hall's east wall: press <kbd>E</kbd> on one to read their credentials, then recruit or decline. The <strong>Recruits</strong> tab of your scroll shows the same list.</li><li>Aim at an empty bench in a chamber and press <kbd>E</kbd> (or click it and confirm).</li><li>Use the Guild tab of the Overlord's ledger.</li></ul>
+<p>By default every recruit waits for your yes. In the ledger's Settings you can switch to auto-approve while a chamber is under the guild cap; anyone beyond the cap still waits for you.</p>
+<h2>Letting someone go</h2>
+<p>Open their terminal (press <kbd>E</kbd> on their bench) or find them in the Guild tab, and press <strong>Let go</strong>. Their worktree is removed; any branches they pushed stay on GitHub. The last tester in a chamber can't be let go.</p>
+</article>
+<nav class="turn" aria-label="Turn the page">
+<a rel="prev" href="/moving">← Chapter II<span class="name">Moving about</span></a>
+<a class="to-contents" href="/#contents">Contents</a>
+<a rel="next" href="/quests">→ Chapter IV<span class="name">Quests: issues, pull requests and QA</span></a>
+</nav>
+</div>
+</main>
+</body>
+</html>

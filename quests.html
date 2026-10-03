@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quests: issues, pull requests and QA · The Code Dungeon User Guide</title>
+<meta name="description" content="Chapter IV of the Code Dungeon User Guide: Quests: issues, pull requests and QA.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@500;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <filter id="burn" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="4" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="char" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<main class="leaf">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<div class="ink">
+<p class="running"><a href="/">Code Dungeon · The User Guide</a></p>
+<article>
+<header class="chapter-head"><p class="chapter-num">Chapter IV</p><h1>Quests: issues, pull requests and QA</h1></header>
+<p class="opening">Work in the dungeon is GitHub issues. An issue goes from the backlog to a coder, becomes a pull request, is tested in the assay room and is merged. You can watch every step on the chamber's notice board, and step in at any of them.</p>
+<h2>Where issues come from</h2>
+<ul><li>Your project briefs: write what a chamber should build next in the ledger (DungeonMaster &amp; recruits tab), and the DungeonMaster turns it into issues.</li><li>The <strong>Issues</strong> tab of the ledger, or the notice board, where you can file one yourself.</li><li>Anything already open on GitHub for that repo.</li></ul>
+<p>An issue that says <code>Depends on #N</code> waits until #N is closed. Of the rest, the ones holding up the most other work go first, then the oldest.</p>
+<h2>The notice board</h2>
+<p>Press <kbd>E</kbd> on the board at the far end of a chamber. Its columns:</p>
+<ul><li><strong>Backlog</strong>: open issues nobody has picked up. Assign one to a coder from here.</li><li><strong>In progress</strong>: coders at work.</li><li><strong>In QA</strong>: pull requests being tested, or being fixed after a failed test. Pull requests that people opened (not coders) show here as not tested yet, with a <strong>Send to QA</strong> button.</li><li><strong>Ready to merge</strong>: QA passed, waiting for you or for auto-merge.</li><li><strong>Merged</strong>: done.</li></ul>
+<p>With <strong>auto-assign</strong> on for a chamber (in the ledger), free coders take the next issue by themselves. With it off, you hand out issues from the board or from a coder's terminal.</p>
+<h2>Pull requests</h2>
+<p>A coder works on a branch called <code>swarm/issue-&lt;n&gt;-&lt;name&gt;</code> and opens a pull request that says <code>Closes #&lt;n&gt;</code>. Coders never push to the default branch and never merge: the dungeon merges, after QA.</p>
+<h2>QA in the assay room</h2>
+<p>A free tester checks out the pull request, reads it and its issue, reviews the diff, runs the tests, linters and build, and tries the change in a real browser with screenshots. The dungeon posts the report on the pull request as a comment: the verdict, a table of checks, the commands run and the screenshots.</p>
+<p>If QA fails, the report goes back to the coder who wrote it. They fix the branch and it goes back to QA. After three failed rounds the pull request is marked <strong>needs you</strong>.</p>
+<h2>Merging</h2>
+<p>With <strong>auto-merge</strong> on (the default), a pull request merges itself once QA has passed its latest commit and GitHub's checks are green. If checks fail or it conflicts with the default branch, a coder fixes it and QA tests it again. With auto-merge off, read the pull request and its QA comment on GitHub, then press <strong>Merge</strong> on the notice board. Merging something that hasn't passed QA asks you to confirm first.</p>
+</article>
+<nav class="turn" aria-label="Turn the page">
+<a rel="prev" href="/guild">← Chapter III<span class="name">Your guild</span></a>
+<a class="to-contents" href="/#contents">Contents</a>
+<a rel="next" href="/watching">→ Chapter V<span class="name">Watching the work</span></a>
+</nav>
+</div>
+</main>
+</body>
+</html>

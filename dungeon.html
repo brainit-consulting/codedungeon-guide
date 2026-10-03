@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The dungeon and how it is laid out · The Code Dungeon User Guide</title>
+<meta name="description" content="Chapter I of the Code Dungeon User Guide: The dungeon and how it is laid out.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@500;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <filter id="burn" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="4" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="char" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<main class="leaf">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<div class="ink">
+<p class="running"><a href="/">Code Dungeon · The User Guide</a></p>
+<article>
+<header class="chapter-head"><p class="chapter-num">Chapter I</p><h1>The dungeon and how it is laid out</h1></header>
+<p class="opening">Code Dungeon is a real software workshop drawn as a dungeon. Every coder you see is a real coding agent working on one of your GitHub repos, and everything they do (issues, branches, pull requests, test reports) is real. The dungeon is one level: a great hall, a gallery running south from it, and a chamber for each project.</p>
+<h2>The great hall</h2>
+<p>You start in the great hall. Its corners and walls hold everything that is about the whole dungeon rather than one project:</p>
+<ul><li><strong>Your study</strong>, the room at the back left. Your table is there: press <kbd>E</kbd> at it to open the Overlord's ledger (chapter 6).</li><li><strong>The DungeonMaster's quarters</strong>, at the back right under the DUNGEONMASTER sign. Press <kbd>E</kbd> on his bench to see what he is working on.</li><li><strong>The bar</strong>, in the middle of the hall, with kegs and bottles behind it. The cat likes to sit on it.</li><li><strong>The hearth</strong> and two feasting tables, towards the south end.</li><li><strong>The recruits' chairs</strong> along the east wall. Anyone the DungeonMaster wants to recruit waits here for your decision.</li><li><strong>The dart board</strong>, on the south wall at the west end (chapter 7).</li></ul>
+<h2>The gallery and the chambers</h2>
+<p>The archway in the middle of the south wall leads into the gallery. Every connected repo has its own chamber off the gallery, alternating west and east. A chamber keeps its number for as long as its repo is connected, so removing one project never moves the others.</p>
+<p>Each chamber has a pair of oak doors. They creak open as you come up the gallery towards them and swing shut once you are well past, so from inside one chamber you see the shut doors of the chamber opposite.</p>
+<p>The directory beside the archway lists every chamber: press <kbd>E</kbd> on it to walk straight into one instead of finding the door.</p>
+<h2>Inside a chamber</h2>
+<ul><li><strong>The notice board</strong> on the far wall, facing you as you come in: the chamber's issues and pull requests (chapter 4).</li><li><strong>The coders' workbenches</strong>, each with a slate on an easel showing that coder's live terminal (chapter 5).</li><li><strong>The assay room</strong>: the testers in aprons along the east wall, who check every pull request before it is merged.</li><li><strong>The gauges</strong> on the far wall, right of the SHIP IT sign: how hard this computer is working (processor, memory, disk) and how Claude usage stands. Press <kbd>E</kbd> on them for the full readout, refreshed every five seconds.</li><li><strong>The framed screen</strong> on the left wall: the project's own app. Press <kbd>E</kbd> on it to start the app on the default branch or on any open pull request, and use it right there.</li></ul>
+<p>The plate at the top left of the screen always tells you where you are: the chamber number and repo name, or G and the great hall, with how many people are in the guild, how many are working, and how many pull requests are in QA or ready to merge.</p>
+</article>
+<nav class="turn" aria-label="Turn the page">
+<span></span>
+<a class="to-contents" href="/#contents">Contents</a>
+<a rel="next" href="/moving">→ Chapter II<span class="name">Moving about</span></a>
+</nav>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Overlord's ledger · The Code Dungeon User Guide</title>
+<meta name="description" content="Chapter VI of the Code Dungeon User Guide: The Overlord's ledger.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@500;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <filter id="burn" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="4" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="char" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<main class="leaf">
+<div class="char" aria-hidden="true"></div>
+<div class="paper" aria-hidden="true"></div>
+<div class="ink">
+<p class="running"><a href="/">Code Dungeon · The User Guide</a></p>
+<article>
+<header class="chapter-head"><p class="chapter-num">Chapter VI</p><h1>The Overlord's ledger</h1></header>
+<p class="opening">The ledger is where you change how the dungeon runs. It sits on your table in your study (back left of the great hall): press <kbd>E</kbd> at the table to open it. It has five tabs.</p>
+<h2>Chambers &amp; repos</h2>
+<p>One row per chamber. <strong>Visit</strong> walks you there. Switches for <strong>Auto-assign issues</strong>, <strong>Auto-merge</strong> and <strong>Browser testing</strong> (testers use a real browser through Playwright). You can pick the chamber's colour, link it to other chambers so its coders can read those repos, and <strong>Disconnect</strong> it: everyone in it is let go, nothing is deleted on GitHub, and the folder stays on disk.</p>
+<p>Each row also shows whether your project folder is up to date with GitHub. After a merge it fast-forwards when that is safe; if it can't (local changes, another branch checked out), it says why, and <strong>Sync now</strong> tries again. Nothing is ever stashed or thrown away.</p>
+<p><strong>Add a project</strong> at the bottom connects a project folder or a GitHub repo, or starts a new one. Every project must be on GitHub, because issues and pull requests are how the guild works.</p>
+<h2>DungeonMaster &amp; recruits</h2>
+<p>The DungeonMaster's model and effort, the recruits waiting for you, and a <strong>project brief</strong> for each chamber: what it should build next. <strong>Re-study</strong> asks him to read the repo again and rethink the guild.</p>
+<h2>Guild</h2>
+<p>Everyone in every chamber: name, job title, specialty, coding agent, model, effort and look. <strong>Terminal</strong> opens their terminal; <strong>Let go</strong> lets them go.</p>
+<h2>Issues</h2>
+<p>File a new issue on any chamber's repo, and see the open ones.</p>
+<h2>Settings</h2>
+<ul><li><strong>Default coding agent, model and effort</strong> for everyone (each person can override them in the Guild tab).</li><li><strong>Session limit</strong>: how many agents may work at once. Empty means no limit.</li><li><strong>Sessions while pacing</strong>: how many may run when Claude warns that usage is high (chapter 8).</li><li><strong>Recruiting</strong>: approve every recruit, or auto-approve up to the <strong>guild cap per chamber</strong>.</li><li><strong>Dungeon review every</strong> so many minutes: how often the DungeonMaster looks over everything (0 turns it off).</li><li><strong>How coders run</strong>: real terminals (recommended) or the Agent SDK.</li><li>Your name, the company name, the folder new projects are created in, and <strong>Replay the tour</strong>.</li></ul>
+<p>When an update to the dungeon itself is ready, a row at the top of the ledger offers <strong>Update now</strong> or <strong>Later</strong>. Updating lets running sessions finish first, then restarts the dungeon.</p>
+</article>
+<nav class="turn" aria-label="Turn the page">
+<a rel="prev" href="/watching">← Chapter V<span class="name">Watching the work</span></a>
+<a class="to-contents" href="/#contents">Contents</a>
+<a rel="next" href="/pastimes">→ Chapter VII<span class="name">Pastimes: darts and the black cat</span></a>
+</nav>
+</div>
+</main>
+</body>
+</html>
