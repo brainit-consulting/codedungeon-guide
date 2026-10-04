@@ -15,6 +15,7 @@ and commit and push here. Vercel's GitHub integration publishes every push to `m
 | --- | --- |
 | [**Introduction to Code Dungeon**](https://youtu.be/RzP2SoLmC6Q) (2 min 23 s): what it is and how the guild works. | [**Getting started**](https://youtu.be/Mn74ZSlh78U) (2 min 35 s): installing it and your first project. |
 
-The images are kept in `images/`, which the site build leaves alone.
+Both are in the [Code Dungeon playlist](https://www.youtube.com/playlist?list=PLUwGnHgif6To). The images are kept in
+`images/`, which the site build leaves alone.
 
 MIT licence, as Code Dungeon: see [LICENSE](LICENSE).
