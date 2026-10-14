@@ -5,7 +5,9 @@
   const KEY = 'codedungeon-guide-text-size';
   let at = 1;
   try {
-    const saved = Number(localStorage.getItem(KEY));
+    // nothing saved yet reads as null, which Number() would turn into 0, the smallest size
+    const raw = localStorage.getItem(KEY);
+    const saved = raw === null ? NaN : Number(raw);
     if (Number.isInteger(saved) && SIZES[saved]) at = saved;
   } catch {
     // storage blocked: the size just isn't remembered
